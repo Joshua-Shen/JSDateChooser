@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="THu-Z2-syu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--日历-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjP-7S-aES" customClass="JSDateChooserView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="nt3-a0-mZm"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dateChooserValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="waz-FY-d9T"/>
+                                </connections>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ok3-x0-KuY">
+                                <rect key="frame" x="531" y="477" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sigleModeValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="gNF-ek-sJX"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URB-jg-g2M">
+                                <rect key="frame" x="531" y="528" width="51" height="31"/>
+                                <connections>
+                                    <action selector="selecteModeValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="I3X-oS-XYP"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVg-Ef-RLL">
+                                <rect key="frame" x="531" y="579" width="51" height="31"/>
+                                <connections>
+                                    <action selector="showUserEventsModeValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="IVd-k5-P3L"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6b-O3-iII">
+                                <rect key="frame" x="219" y="381" width="162" height="36"/>
+                                <fontDescription key="fontDescription" name="DevanagariSangamMN-Bold" family="Devanagari Sangam MN" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单行模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSb-XP-9ao">
+                                <rect key="frame" x="398" y="484" width="60" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="过去时间可以选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQO-OJ-4Cw">
+                                <rect key="frame" x="398" y="535" width="120" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示用户日历事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPc-vx-xN6">
+                                <rect key="frame" x="398" y="586" width="120" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8M8-O8-g5h">
+                                <rect key="frame" x="204" y="425" width="192" height="1"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8Qf-nh-Xrx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="URB-jg-g2M" firstAttribute="trailing" secondItem="Ok3-x0-KuY" secondAttribute="trailing" id="2FF-I5-pqq"/>
+                            <constraint firstItem="8M8-O8-g5h" firstAttribute="width" secondItem="B6b-O3-iII" secondAttribute="width" constant="30" id="5V1-A2-Xh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WjP-7S-aES" secondAttribute="trailing" constant="-20" id="5w8-Dd-t0A"/>
+                            <constraint firstItem="Ok3-x0-KuY" firstAttribute="top" secondItem="B6b-O3-iII" secondAttribute="bottom" constant="60" id="Aze-hb-8rN"/>
+                            <constraint firstItem="KSb-XP-9ao" firstAttribute="leading" secondItem="EQO-OJ-4Cw" secondAttribute="leading" id="B1S-69-Gl9"/>
+                            <constraint firstItem="B6b-O3-iII" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="317" id="MUg-DH-LpO"/>
+                            <constraint firstItem="KSb-XP-9ao" firstAttribute="centerY" secondItem="Ok3-x0-KuY" secondAttribute="centerY" id="PHN-dh-ufJ"/>
+                            <constraint firstItem="KVg-Ef-RLL" firstAttribute="top" secondItem="URB-jg-g2M" secondAttribute="bottom" constant="20" id="PtP-f0-zVJ"/>
+                            <constraint firstItem="8M8-O8-g5h" firstAttribute="top" secondItem="B6b-O3-iII" secondAttribute="bottom" constant="8" id="Rfm-3a-UHA"/>
+                            <constraint firstItem="URB-jg-g2M" firstAttribute="leading" secondItem="EQO-OJ-4Cw" secondAttribute="trailing" constant="13" id="WpU-Xu-hNa"/>
+                            <constraint firstItem="URB-jg-g2M" firstAttribute="top" secondItem="Ok3-x0-KuY" secondAttribute="bottom" constant="20" id="ZMh-8t-shl"/>
+                            <constraint firstItem="B6b-O3-iII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJ5-jW-3Wy"/>
+                            <constraint firstItem="KVg-Ef-RLL" firstAttribute="leading" secondItem="IPc-vx-xN6" secondAttribute="trailing" constant="13" id="hL7-fV-dlw"/>
+                            <constraint firstItem="EQO-OJ-4Cw" firstAttribute="centerY" secondItem="URB-jg-g2M" secondAttribute="centerY" id="hOE-u8-qVJ"/>
+                            <constraint firstItem="KVg-Ef-RLL" firstAttribute="trailing" secondItem="URB-jg-g2M" secondAttribute="trailing" id="hiw-QX-X2H"/>
+                            <constraint firstItem="WjP-7S-aES" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kTt-Mt-NKd"/>
+                            <constraint firstItem="WjP-7S-aES" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nSh-Hx-rMq"/>
+                            <constraint firstItem="IPc-vx-xN6" firstAttribute="centerY" secondItem="KVg-Ef-RLL" secondAttribute="centerY" id="p6A-dH-Cta"/>
+                            <constraint firstItem="Ok3-x0-KuY" firstAttribute="trailing" secondItem="WjP-7S-aES" secondAttribute="trailing" constant="-20" id="pVl-cI-2BR"/>
+                            <constraint firstItem="8M8-O8-g5h" firstAttribute="centerX" secondItem="B6b-O3-iII" secondAttribute="centerX" id="rYb-2x-aNz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="日历" id="uW3-V7-yGd"/>
+                    <connections>
+                        <outlet property="dateChooserView" destination="WjP-7S-aES" id="cEj-KG-yZs"/>
+                        <outlet property="dateConstraint" destination="nt3-a0-mZm" id="N4a-Tn-p7e"/>
+                        <outlet property="selectModelSwitch" destination="URB-jg-g2M" id="mQ7-fX-Dx8"/>
+                        <outlet property="selectedDateLabel" destination="B6b-O3-iII" id="Nag-mN-dLp"/>
+                        <outlet property="sigleModeSwitch" destination="Ok3-x0-KuY" id="XGa-aG-bre"/>
+                        <outlet property="userEventSwitch" destination="KVg-Ef-RLL" id="uzG-SB-nQl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="1049"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zjY-UW-ZNq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="THu-Z2-syu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="2eL-Y6-cuZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NLa-qW-rKR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3y-Bf-say" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="1049"/>
+        </scene>
+    </scenes>
+</document>
