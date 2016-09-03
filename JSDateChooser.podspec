@@ -10,15 +10,15 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Joshua-Shen/JSDateChooser.git", :tag => s.version }
   s.requires_arc = true
-  s.public_header_files = 'JSDateChooser/JSDateChooser.h'
-  s.source_files  = 'JSDateChooser/JSDateChooser.h'
+  s.public_header_files = 'JSDateChooser/JSDateChooser/JSDateChooser.h'
+  s.source_files  = 'JSDateChooser/JSDateChooser/JSDateChooser.h'
 
   s.subspec 'Classes' do |ss|
-    ss.source_files = 'JSDateChooser/Classes/*.{h,m}'
+    ss.source_files = 'JSDateChooser/JSDateChooser/Classes/*.{h,m}'
   end
 
   s.subspec 'StyleKit' do |ss|
-    ss.source_files = 'JSDateChooser/StyleKit/*.{h,m}'
+    ss.source_files = 'JSDateChooser/JSDateChooser/StyleKit/*.{h,m}'
   end
 
 end
