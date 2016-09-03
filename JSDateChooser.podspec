@@ -13,12 +13,12 @@ Pod::Spec.new do |s|
   s.public_header_files = 'JSDateChooser/JSDateChooser/JSDateChooser.h'
   s.source_files  = 'JSDateChooser/JSDateChooser/JSDateChooser.h'
 
-  s.subspec 'Classes' do |ss|
-    ss.source_files = 'JSDateChooser/JSDateChooser/Classes/**/*.{h,m}'
+  s.subspec 'StyleKit' do |ss|
+    ss.source_files = 'JSDateChooser/StyleKit/*.{h,m}'
   end
 
-  s.subspec 'StyleKit' do |ss|
-    ss.source_files = 'JSDateChooser/JSDateChooser/StyleKit/*{h,m}'
+  s.subspec 'Classes' do |ss|
+    ss.source_files = 'JSDateChooser/Classes/**/*.{h,m}'
   end
 
 end
