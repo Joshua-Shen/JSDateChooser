@@ -18,8 +18,6 @@
 		B04215A61D7A5EAB00B86C3B /* JSDateUntils.m in Sources */ = {isa = PBXBuildFile; fileRef = B042159C1D7A5EAB00B86C3B /* JSDateUntils.m */; };
 		B04215A71D7A5EAB00B86C3B /* JSDateChooserView.h in Headers */ = {isa = PBXBuildFile; fileRef = B042159D1D7A5EAB00B86C3B /* JSDateChooserView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B04215A81D7A5EAB00B86C3B /* JSDateChooserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B042159E1D7A5EAB00B86C3B /* JSDateChooserView.m */; };
-		B04215AC1D7A605200B86C3B /* CustomImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B04215AA1D7A605200B86C3B /* CustomImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B04215AD1D7A605200B86C3B /* CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215AB1D7A605200B86C3B /* CustomImage.m */; };
 		B04215B61D7A615700B86C3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215B51D7A615700B86C3B /* main.m */; };
 		B04215B91D7A615700B86C3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215B81D7A615700B86C3B /* AppDelegate.m */; };
 		B04215BC1D7A615700B86C3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215BB1D7A615700B86C3B /* ViewController.m */; };
@@ -29,6 +27,8 @@
 		B04215CF1D7A615700B86C3B /* JSDateChooserDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215CE1D7A615700B86C3B /* JSDateChooserDemoUITests.m */; };
 		B04215D91D7A61A000B86C3B /* JSDateChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04215881D7A5E5E00B86C3B /* JSDateChooser.framework */; };
 		B04215DA1D7A61A000B86C3B /* JSDateChooser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B04215881D7A5E5E00B86C3B /* JSDateChooser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B04215DF1D7A99B500B86C3B /* CustomImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B04215DD1D7A99B500B86C3B /* CustomImage.h */; };
+		B04215E01D7A99B500B86C3B /* CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B04215DE1D7A99B500B86C3B /* CustomImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,6 @@
 		B042159C1D7A5EAB00B86C3B /* JSDateUntils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDateUntils.m; sourceTree = "<group>"; };
 		B042159D1D7A5EAB00B86C3B /* JSDateChooserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDateChooserView.h; sourceTree = "<group>"; };
 		B042159E1D7A5EAB00B86C3B /* JSDateChooserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDateChooserView.m; sourceTree = "<group>"; };
-		B04215AA1D7A605200B86C3B /* CustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImage.h; sourceTree = "<group>"; };
-		B04215AB1D7A605200B86C3B /* CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImage.m; sourceTree = "<group>"; };
 		B04215B21D7A615700B86C3B /* JSDateChooserDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSDateChooserDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04215B51D7A615700B86C3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B04215B71D7A615700B86C3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		B04215CA1D7A615700B86C3B /* JSDateChooserDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSDateChooserDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04215CE1D7A615700B86C3B /* JSDateChooserDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDateChooserDemoUITests.m; sourceTree = "<group>"; };
 		B04215D01D7A615700B86C3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04215DD1D7A99B500B86C3B /* CustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomImage.h; sourceTree = "<group>"; };
+		B04215DE1D7A99B500B86C3B /* CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,6 @@
 		B042158A1D7A5E5E00B86C3B /* JSDateChooser */ = {
 			isa = PBXGroup;
 			children = (
-				B04215A91D7A605200B86C3B /* StyleKit */,
 				B04215931D7A5EAB00B86C3B /* Classes */,
 				B042158B1D7A5E5E00B86C3B /* JSDateChooser.h */,
 				B042158D1D7A5E5E00B86C3B /* Info.plist */,
@@ -153,6 +152,7 @@
 		B04215931D7A5EAB00B86C3B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B04215DC1D7A99B500B86C3B /* StyleKit */,
 				B04215941D7A5EAB00B86C3B /* Internal */,
 				B042159D1D7A5EAB00B86C3B /* JSDateChooserView.h */,
 				B042159E1D7A5EAB00B86C3B /* JSDateChooserView.m */,
@@ -173,15 +173,6 @@
 				B042159C1D7A5EAB00B86C3B /* JSDateUntils.m */,
 			);
 			path = Internal;
-			sourceTree = "<group>";
-		};
-		B04215A91D7A605200B86C3B /* StyleKit */ = {
-			isa = PBXGroup;
-			children = (
-				B04215AA1D7A605200B86C3B /* CustomImage.h */,
-				B04215AB1D7A605200B86C3B /* CustomImage.m */,
-			);
-			path = StyleKit;
 			sourceTree = "<group>";
 		};
 		B04215B31D7A615700B86C3B /* JSDateChooserDemo */ = {
@@ -217,6 +208,15 @@
 			path = JSDateChooserDemoUITests;
 			sourceTree = "<group>";
 		};
+		B04215DC1D7A99B500B86C3B /* StyleKit */ = {
+			isa = PBXGroup;
+			children = (
+				B04215DD1D7A99B500B86C3B /* CustomImage.h */,
+				B04215DE1D7A99B500B86C3B /* CustomImage.m */,
+			);
+			path = StyleKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -227,8 +227,8 @@
 				B04215A71D7A5EAB00B86C3B /* JSDateChooserView.h in Headers */,
 				B04215A11D7A5EAB00B86C3B /* JSDateIndicatorView.h in Headers */,
 				B042159F1D7A5EAB00B86C3B /* JSDateComponentView.h in Headers */,
+				B04215DF1D7A99B500B86C3B /* CustomImage.h in Headers */,
 				B04215A51D7A5EAB00B86C3B /* JSDateUntils.h in Headers */,
-				B04215AC1D7A605200B86C3B /* CustomImage.h in Headers */,
 				B04215A31D7A5EAB00B86C3B /* JSDateNavigationBar.h in Headers */,
 				B042158C1D7A5E5E00B86C3B /* JSDateChooser.h in Headers */,
 			);
@@ -367,7 +367,7 @@
 			files = (
 				B04215A01D7A5EAB00B86C3B /* JSDateComponentView.m in Sources */,
 				B04215A21D7A5EAB00B86C3B /* JSDateIndicatorView.m in Sources */,
-				B04215AD1D7A605200B86C3B /* CustomImage.m in Sources */,
+				B04215E01D7A99B500B86C3B /* CustomImage.m in Sources */,
 				B04215A81D7A5EAB00B86C3B /* JSDateChooserView.m in Sources */,
 				B04215A41D7A5EAB00B86C3B /* JSDateNavigationBar.m in Sources */,
 				B04215A61D7A5EAB00B86C3B /* JSDateUntils.m in Sources */,
@@ -612,6 +612,7 @@
 				B04215921D7A5E5E00B86C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04215D11D7A615700B86C3B /* Build configuration list for PBXNativeTarget "JSDateChooserDemo" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +621,7 @@
 				B04215D31D7A615700B86C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04215D41D7A615700B86C3B /* Build configuration list for PBXNativeTarget "JSDateChooserDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +630,7 @@
 				B04215D61D7A615700B86C3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
